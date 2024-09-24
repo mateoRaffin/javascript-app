@@ -66,7 +66,7 @@ document.body.appendChild(contieneBtn);
 
 //Botón del carrito
 const botonCarrito = document.getElementById("listaCarrito");
-botonCarrito.style.backgroundColor = "#C6A05A";
+botonCarrito.style.backgroundColor = "#4D7766";
 botonCarrito.style.fontSize = "15px";
 
 //Lista oculta
@@ -126,6 +126,39 @@ function calcularTotal() {
                total += parseFloat(precioStr[0]);
           }
      });
-
      totalElement.innerText = `Total: $${total.toFixed(2)}`;
 }
+
+//Botón Comprar
+const botonComprar = document.createElement("button");
+botonComprar.innerText = "Comprar";
+botonComprar.style.display = "flex";
+botonComprar.style.justifyContent = "center";
+botonComprar.style.width = "10%";
+botonComprar.style.backgroundColor = "#C6A05A";
+botonComprar.style.color = "white";
+botonComprar.style.padding = "10px 15px";
+botonComprar.style.borderRadius = "10px";
+botonComprar.style.fontSize = "18px";
+botonComprar.style.marginTop = "20px";
+document.body.appendChild(botonComprar);
+
+//LocalStorage
+function guardarEnLocalStorage() {
+     const listaItems = listaProductos.querySelectorAll("li");
+     localStorage.clear();
+
+     listaItems.forEach((item, index) => {
+          const producto = item.innerText.split(' - ')[0].replace("Producto: ", "");
+          const precioStr = item.innerText.match(/\d+(\.\d+)?/);
+          const precio = parseFloat(precioStr[0]);
+
+          localStorage.setItem(`producto_${index}`, `${producto}: ${precio}`);
+     })
+}
+
+botonComprar.addEventListener("click", () => {
+     guardarEnLocalStorage();
+     listaProductos.innerHTML = "";
+     totalElement.innerText = "Total: $0.00";
+});
