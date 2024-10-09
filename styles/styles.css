@@ -1,31 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
+#contProductos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#contProductos .titleProd {
+  font-size: 40px;
+}
+#contProductos .valueProd {
+  font-size: 30px;
+}
+#contProductos .buttonProd {
+  background-color: #4D7766;
+  color: whitesmoke;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: #333;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+/*# sourceMappingURL=styles.css.map */

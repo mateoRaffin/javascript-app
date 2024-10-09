@@ -1,7 +1,3 @@
-document.body.style.backgroundColor = "#E5E4DF";
-document.body.style.display = "flex";
-document.body.style.flexDirection = "column";
-
 let productos = [{
      id: 1,
      nombre: "Resmas",
@@ -31,69 +27,53 @@ let productos = [{
 
 for (const producto of productos) {
      let contenedor = document.createElement("div")
-     contenedor.id = "miContenedor";
-     contenedor.style.display = "flex";
-     contenedor.style.justifyContent = "space-around";
-     contenedor.style.alignItems = "center";
-     contenedor.style.padding = "25px";
-
-     contenedor.innerHTML = `<h1> ${producto.nombre} </h3>
-                             <p> Valor: ${producto.precio} </p>
-                             <button> ${producto.boton} </button>`;
+     contenedor.id = "contProductos";
+     contenedor.innerHTML = `<h1 class="titleProd"> ${producto.nombre} </h1>
+                             <p class="valueProd"> Valor: ${producto.precio} </p>
+                             <button class="buttonProd"> ${producto.boton} </button>`;
 
      let boton = contenedor.querySelector("button");
-     boton.style.backgroundColor = "#4D7766";
-     boton.style.color = "white";
-     boton.style.padding = "5px 7px";
-     boton.style.borderRadius = "10px";
-     boton.style.fontSize = "15px";
-
      boton.addEventListener("click", () => {
           agregarProductoAlCarrito(producto);
      });
-
      document.body.appendChild(contenedor);
 }
-
-//Creo la lista
+//Contenedor btn ver carrito
 let contieneBtn = document.createElement("div")
-contieneBtn.id = "listCarrito";
-contieneBtn.style.display = "flex";
-contieneBtn.style.justifyContent = "center";
+// contieneBtn.style.display = "flex";
+// contieneBtn.style.justifyContent = "center";
 
 contieneBtn.innerHTML = `<button id="listaCarrito"> Ver Carrito </button>`;
 document.body.appendChild(contieneBtn);
 
 //Botón del carrito
 const botonCarrito = document.getElementById("listaCarrito");
-botonCarrito.style.backgroundColor = "#4D7766";
-botonCarrito.style.fontSize = "15px";
 
 //Lista oculta
 const listaProductos = document.createElement("ul");
 listaProductos.id = "listaProductos";
-listaProductos.style.display = "none";
-listaProductos.style.textAlign = "left";
-listaProductos.style.fontSize = "18px";
-listaProductos.style.color = "#333";
-listaProductos.style.marginTop = "20px";
-listaProductos.style.padding = "10px";
+// listaProductos.style.display = "none";
+// listaProductos.style.textAlign = "left";
+// listaProductos.style.fontSize = "18px";
+// listaProductos.style.color = "#333";
+// listaProductos.style.marginTop = "20px";
+// listaProductos.style.padding = "10px";
 
 document.body.appendChild(listaProductos);
 //Mostrar/ocultar lista
 function mostrarOcultarLista() {
      const lista = document.getElementById("listaProductos");
-     lista.style.display = lista.style.display === "none" ? "block" : "none";
+     // lista.style.display = lista.style.display === "none" ? "block" : "none";
 }
 
 //Mostrar el total
 const totalElement = document.createElement("p");
 totalElement.id = "total";
-totalElement.style.textAlign = "left";
-totalElement.style.marginTop = "20px";
-totalElement.style.padding = "10px";
-totalElement.style.fontSize = "18px";
-totalElement.style.color = "#333";
+// totalElement.style.textAlign = "left";
+// totalElement.style.marginTop = "20px";
+// totalElement.style.padding = "10px";
+// totalElement.style.fontSize = "18px";
+// totalElement.style.color = "#333";
 document.body.appendChild(totalElement);
 
 //Evento mostrar/ocultar lista
@@ -103,12 +83,12 @@ let total = 0;
 //Agregar un producto al Carrito
 function agregarProductoAlCarrito(producto) {
      const nuevoItem = document.createElement("li");
-     nuevoItem.innerText = `Producto: ${producto.nombre} | Precio: ${producto.precio}`;
-     nuevoItem.style.listStyle = "none";
-     nuevoItem.style.textAlign = "left";
-     nuevoItem.style.marginTop = "5px";
-     nuevoItem.style.padding = "5px";
-     nuevoItem.style.fontSize = "18px";
+     nuevoItem.innerText = `Producto: ${producto.nombre} | Precio: $${producto.precio}`;
+     // nuevoItem.style.listStyle = "none";
+     // nuevoItem.style.textAlign = "left";
+     // nuevoItem.style.marginTop = "5px";
+     // nuevoItem.style.padding = "5px";
+     // nuevoItem.style.fontSize = "18px";
 
      listaProductos.appendChild(nuevoItem);
      listaProductos.style.textAlign = "left";
@@ -131,16 +111,16 @@ function calcularTotal() {
 
 //Botón Comprar
 const botonComprar = document.createElement("button");
-botonComprar.innerText = "Comprar";
-botonComprar.style.display = "flex";
-botonComprar.style.justifyContent = "center";
-botonComprar.style.width = "10%";
-botonComprar.style.backgroundColor = "#C6A05A";
-botonComprar.style.color = "white";
-botonComprar.style.padding = "10px 15px";
-botonComprar.style.borderRadius = "10px";
-botonComprar.style.fontSize = "18px";
-botonComprar.style.marginTop = "20px";
+// botonComprar.innerText = "Comprar";
+// botonComprar.style.display = "flex";
+// botonComprar.style.justifyContent = "center";
+// botonComprar.style.width = "10%";
+// botonComprar.style.backgroundColor = "#C6A05A";
+// botonComprar.style.color = "white";
+// botonComprar.style.padding = "10px 15px";
+// botonComprar.style.borderRadius = "10px";
+// botonComprar.style.fontSize = "18px";
+// botonComprar.style.marginTop = "20px";
 document.body.appendChild(botonComprar);
 
 //LocalStorage
