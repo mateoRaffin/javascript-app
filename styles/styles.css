@@ -1,25 +1,114 @@
+body {
+  background-color: #383934;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 7px;
+  margin-bottom: 50px;
+  background-color: #C5B5A5;
+  width: 100%;
+}
+
+.titulo-nav {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#btnBag {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  background-color: #DFB399;
+  margin: 5px 5px;
+  padding: 0 25px;
+  border: none;
+  box-shadow: 1px 1px 4px #383934;
+  cursor: pointer;
+}
+
+#logoCarrito {
+  width: 35px;
+  height: 35px;
+}
+
+#comprar {
+  display: none;
+  justify-content: center;
+  width: 7%;
+  background-color: #DFB399;
+  box-shadow: 1px 1px 2px #DFB399;
+  border: none;
+  margin: 0 70px;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
 #contProductos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-color: #C5B5A5;
+  width: 10%;
+  margin: 10px 50px;
+  padding: 0 10px;
   align-items: center;
+  border: 1px solid #DFB399;
+  box-shadow: 0px 0px 4px #DFB399;
 }
 #contProductos .titleProd {
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  width: 170px;
+  text-align: center;
 }
 #contProductos .valueProd {
-  font-size: 30px;
+  font-size: 25px;
+  width: 120px;
+  text-align: center;
 }
 #contProductos .buttonProd {
-  background-color: #4D7766;
-  color: whitesmoke;
-  padding: 5px 7px;
+  background-color: #DFB399;
+  margin: 7px 25px;
+  padding: 1px 15px;
   border-radius: 10px;
   font-size: 20px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 1px 1px 5px #383934;
+  cursor: pointer;
+}
+#contProductos .buttonProd:hover {
+  background-color: #DFB399;
+}
+#contProductos img {
+  width: 100%;
+  height: auto;
+}
+
+#nuevoItem {
+  list-style-type: none;
+  width: 45%;
+  text-align: justify;
+  margin: 2px 25px;
+  padding: 5px 2px;
+  font-size: 20px;
+}
+
+#listaProductos {
+  display: none;
+  width: 40%;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
