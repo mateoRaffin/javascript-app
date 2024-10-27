@@ -1,8 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  height: 120px;
+}
+#navBar a {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+#navBar .titulo-nav {
+  font-size: 1.5em;
+}
+#navBar #logoCarrito {
+  width: 5em;
+  height: 5em;
+}
+#navBar #btnBag {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+#navBar #btnBag #contadorCarrito {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f4f4f4;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3em 0.5em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform: translate(25%, -25%);
+}
+
+#contenedorProductos {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 1em;
+}
+#contenedorProductos .producto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+}
+#contenedorProductos .producto img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+#contenedorProductos .producto h3 {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+#contenedorProductos .producto p {
+  font-size: 1em;
+  color: #666;
+}
+#contenedorProductos .producto button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#contenedorProductos .producto button:hover {
+  background-color: #0056b3;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: #ffffff;
   box-sizing: border-box;
 }
 

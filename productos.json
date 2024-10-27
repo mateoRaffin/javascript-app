@@ -1,12 +1,12 @@
 [
-    { "id": 1, "nombre": "Resmas", "precio": 50000, "boton": "Agregar", "imagen": "./multimedia/img/punax.png"
+    { "id": 1, "nombre": "Resmas", "precio": 50000, "imagen": "./multimedia/img/punax.png"
     },
-    { "id": 2, "nombre": "Almanaques", "precio": 10500, "boton": "Agregar", "imagen": "./multimedia/img/almanaque.jpeg"
+    { "id": 2, "nombre": "Almanaques", "precio": 10500, "imagen": "./multimedia/img/almanaque.jpeg"
     },
-    { "id": 3, "nombre": "Tazas", "precio": 8500, "boton": "Agregar", "imagen": "./multimedia/img/tazas-sinfondo-mg.png"
+    { "id": 3, "nombre": "Tazas", "precio": 8500, "imagen": "./multimedia/img/tazas-sinfondo-mg.png"
     },
-    { "id": 4, "nombre": "Bolsas", "precio": 7500, "boton": "Agregar", "imagen": "./multimedia/img/bolsas.png"
+    { "id": 4, "nombre": "Bolsas", "precio": 7500, "imagen": "./multimedia/img/bolsas.png"
     },
-    { "id": 5, "nombre": "Sellos", "precio": 7000, "boton": "Agregar", "imagen": "./multimedia/img/sello-automatico.png"
+    { "id": 5, "nombre": "Sellos", "precio": 7000, "imagen": "./multimedia/img/sello-automatico.png"
     }
 ]
