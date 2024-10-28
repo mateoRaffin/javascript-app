@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #1a1a1a;
   color: #333;
 }
 
@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #363636;
   color: #fff;
   padding: 1em;
   height: 120px;
@@ -20,6 +20,7 @@ body {
 }
 #navBar .titulo-nav {
   font-size: 2em;
+  font-weight: bolder;
 }
 #navBar #logoCarrito {
   width: 5em;
@@ -37,7 +38,7 @@ body {
   top: 5px;
   right: 25px;
   background: transparent;
-  color: #f4f4f4;
+  color: #B5734C;
   border-radius: 50%;
   padding: 0.3em 0.5em;
   font-size: 0.8rem;
@@ -60,7 +61,7 @@ body {
 }
 #contenedorProductos .producto img {
   max-width: 85%;
-  height: auto;
+  height: 300px;
 }
 #contenedorProductos .producto h3 {
   font-size: 1.1em;
@@ -84,10 +85,23 @@ body {
 }
 
 #comprarButton {
-  background-color: #333;
+  background-color: #B5734C;
   display: flex;
   padding: 0.5em 0.7em;
-  margin: 1em 2em;
+  margin: 0.2em 1em;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#car-Cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
 }
 
 * {

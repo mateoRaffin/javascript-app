@@ -121,7 +121,7 @@ function mostrarProductosEnCarrito() {
             const subtotal = producto.precio * producto.cantidad;
             total += subtotal;
             htmlCarrito += `
-                <div style="display: flex; align-items: center; justify-content: space-between; margin: 5px 0;">
+                <div id="car-Cont">
                     <span>${producto.nombre} - $${producto.precio} - Cantidad: ${producto.cantidad} - Subtotal: $${subtotal.toFixed(2)}</span>
                     <div style="display: flex; align-items: center;">
                         <button onclick="disminuirCantidad(${producto.id})" style="margin-right: 5px;">-</button>
