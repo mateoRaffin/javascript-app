@@ -16,11 +16,11 @@ body {
     a {
         outline: none;
         text-decoration: none;
-        color: #fff;
+        color: #B5734C;
     }
 
     .titulo-nav {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #logoCarrito {
@@ -29,17 +29,17 @@ body {
     }
 
     #btnBag {
+        position: relative;
         background: none;
         border: none;
         cursor: pointer;
-        position: relative;
-
+        margin-right: 20px;
         #contadorCarrito {
             position: absolute;
-            top: 0;
-            right: 0;
-            background-color: #f4f4f4;
-            color: white;
+            top: 5px;
+            right: 25px;
+            background: transparent;
+            color: #f4f4f4;
             border-radius: 50%;
             padding: 0.3em 0.5em;
             font-size: 0.8rem;
@@ -61,10 +61,9 @@ body {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 1em;
         text-align: center;
-
         img {
-            max-width: 100%;
-            border-radius: 4px;
+            max-width: 85%;
+            height: auto;
         }
 
         h3 {
@@ -91,4 +90,11 @@ body {
             }
         }
     }
+}
+
+#comprarButton{
+    background-color: #333;
+    display: flex;
+    padding: 0.5em 0.7em;
+    margin: 1em 2em;
 }

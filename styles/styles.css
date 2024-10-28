@@ -16,27 +16,28 @@ body {
 #navBar a {
   outline: none;
   text-decoration: none;
-  color: #fff;
+  color: #B5734C;
 }
 #navBar .titulo-nav {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 #navBar #logoCarrito {
   width: 5em;
   height: 5em;
 }
 #navBar #btnBag {
+  position: relative;
   background: none;
   border: none;
   cursor: pointer;
-  position: relative;
+  margin-right: 20px;
 }
 #navBar #btnBag #contadorCarrito {
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #f4f4f4;
-  color: white;
+  top: 5px;
+  right: 25px;
+  background: transparent;
+  color: #f4f4f4;
   border-radius: 50%;
   padding: 0.3em 0.5em;
   font-size: 0.8rem;
@@ -58,8 +59,8 @@ body {
   text-align: center;
 }
 #contenedorProductos .producto img {
-  max-width: 100%;
-  border-radius: 4px;
+  max-width: 85%;
+  height: auto;
 }
 #contenedorProductos .producto h3 {
   font-size: 1.1em;
@@ -80,6 +81,13 @@ body {
 }
 #contenedorProductos .producto button:hover {
   background-color: #0056b3;
+}
+
+#comprarButton {
+  background-color: #333;
+  display: flex;
+  padding: 0.5em 0.7em;
+  margin: 1em 2em;
 }
 
 * {
