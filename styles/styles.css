@@ -53,7 +53,7 @@ body {
   padding: 1em;
 }
 #contenedorProductos .producto {
-  background-color: #fff;
+  background-color: #B5734C;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1em;
@@ -69,19 +69,20 @@ body {
 }
 #contenedorProductos .producto p {
   font-size: 1em;
-  color: #666;
+  color: #fff;
 }
 #contenedorProductos .producto button {
-  background-color: #007bff;
+  background-color: #333;
   color: #fff;
   border: none;
   border-radius: 4px;
   padding: 0.5em 1em;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #contenedorProductos .producto button:hover {
-  background-color: #0056b3;
+  background-color: #1A1A1A;
 }
 
 #comprarButton {
@@ -96,12 +97,143 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+#comprarButton:hover {
+  background-color: #E08D5C;
+}
 
 #car-Cont {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin: 15px 0px;
+  margin: 1em 1em;
+  padding: 0.7em 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+#car-Cont #car-Prod {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1A1A1A;
+  text-align: center;
+}
+#car-Cont #cont-Mod {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.2em 1em;
+}
+#car-Cont #cont-Mod #car-menos {
+  padding: 0.2em 0.2em;
+  margin: 0.2em 0.2em;
+  color: #363636;
+  font-size: 0.9em;
+  width: 4em;
+  height: 2em;
+  border: 1px solid #363636;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+#car-Cont #cont-Mod #car-mas {
+  padding: 0.2em 0.2em;
+  margin: 0.2em 0.2em;
+  color: #363636;
+  font-size: 0.9em;
+  width: 4em;
+  height: 2em;
+  border: 1px solid #363636;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+#car-Cont #cont-Mod #car-delete {
+  background-color: #6E7881;
+  color: #fff;
+  padding: 0.2em 0.2em;
+  margin: 0.2em 0.2em;
+  font-size: 0.9em;
+  font-weight: lighter;
+  width: 5em;
+  height: 2em;
+  border: 1px solid #363636;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.swal2-confirm {
+  background-color: #B5734C;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.swal2-confirm:hover {
+  background-color: #E08D5C;
+}
+
+.swal2-cancel {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.swal2-title {
+  color: #1a1a1a;
+}
+
+#nombreUsuario {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#emailUsuario {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#numeroUsuario {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#direccionUsuario {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#codigoPostalUsuario {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#p-Thanks {
+  font-size: 30px;
+  margin: 0.5em 0.5em;
+  font-weight: bold;
+  color: #B5734C;
+}
+
+#resumen {
+  font-size: 25px;
+  margin: 0.5em 0.5em;
+  font-weight: bold;
+  color: #1A1A1A;
+}
+
+#total-Car {
+  margin: 0.5em 0.5em;
+  color: #1A1A1A;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#p-Cods {
+  color: #1A1A1A;
+  font-size: 18px;
+  margin-top: 2em;
 }
 
 * {

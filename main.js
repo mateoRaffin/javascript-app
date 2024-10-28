@@ -122,11 +122,11 @@ function mostrarProductosEnCarrito() {
             total += subtotal;
             htmlCarrito += `
                 <div id="car-Cont">
-                    <span>${producto.nombre} - $${producto.precio} - Cantidad: ${producto.cantidad} - Subtotal: $${subtotal.toFixed(2)}</span>
-                    <div style="display: flex; align-items: center;">
-                        <button onclick="disminuirCantidad(${producto.id})" style="margin-right: 5px;">-</button>
-                        <button onclick="aumentarCantidad(${producto.id})" style="margin-right: 5px;">+</button>
-                        <button onclick="eliminarProducto(${producto.id})" style="background-color: red; color: white;">Eliminar</button>
+                    <span id="car-Prod">${producto.nombre} - $${producto.precio} - Cantidad: ${producto.cantidad} - <br>Subtotal: $${subtotal.toFixed(2)}</span>
+                    <div id="cont-Mod">
+                        <button id="car-menos" onclick="disminuirCantidad(${producto.id})">-</button>
+                        <button id="car-mas" onclick="aumentarCantidad(${producto.id})">+</button>
+                        <button id="car-delete" onclick="eliminarProducto(${producto.id})">Eliminar</button>
                     </div>
                 </div>
             `;
@@ -215,11 +215,11 @@ function mostrarModalCompra() {
             Swal.fire({
                 title: "Compra realizada",
                 html: `
-                    <p>Gracias por tu compra, ${result.value.nombre}!</p>
-                    <h4>Resumen de tu compra:</h4>
+                    <p id="p-Thanks">¡Gracias por tu compra, ${result.value.nombre}!</p>
+                    <h4 id="resumen">Resumen de tu compra:</h4>
                     ${resumen}
-                    <h4>Total: $${total}</h4>
-                    <p>El código de seguimiento será enviado a tu correo.</p>
+                    <h4 id="total-Car">Total: $${total}</h4>
+                    <p id="p-Cods">"El código de seguimiento será enviado a tu correo."</p>
                 `,
                 icon: "success"
             });
